@@ -29,7 +29,7 @@ fun executeCommand(commandId: String, project: Project?) {
  */
 class PlusButtonClickAction : AnAction() {
     private val logger: Logger = Logger.getInstance(PlusButtonClickAction::class.java)
-    private val commandId: String = "roo-cline.plusButtonClicked"
+    private val commandId: String = "zhanlu.plusButtonClicked"
 
     /**
      * Performs the action when the Plus button is clicked.
@@ -48,7 +48,7 @@ class PlusButtonClickAction : AnAction() {
  */
 class PromptsButtonClickAction : AnAction() {
     private val logger: Logger = Logger.getInstance(PromptsButtonClickAction::class.java)
-    private val commandId: String = "roo-cline.promptsButtonClicked"
+    private val commandId: String = "zhanlu.promptsButtonClicked"
 
     /**
      * Performs the action when the Prompts button is clicked.
@@ -67,7 +67,7 @@ class PromptsButtonClickAction : AnAction() {
  */
 class MCPButtonClickAction : AnAction() {
     private val logger: Logger = Logger.getInstance(MCPButtonClickAction::class.java)
-    private val commandId: String = "roo-cline.mcpButtonClicked"
+    private val commandId: String = "zhanlu.mcpButtonClicked"
 
     /**
      * Performs the action when the MCP button is clicked.
@@ -86,7 +86,7 @@ class MCPButtonClickAction : AnAction() {
  */
 class HistoryButtonClickAction : AnAction() {
     private val logger: Logger = Logger.getInstance(HistoryButtonClickAction::class.java)
-    private val commandId: String = "roo-cline.historyButtonClicked"
+    private val commandId: String = "zhanlu.historyButtonClicked"
 
     /**
      * Performs the action when the History button is clicked.
@@ -105,7 +105,7 @@ class HistoryButtonClickAction : AnAction() {
  */
 class SettingsButtonClickAction : AnAction() {
     private val logger: Logger = Logger.getInstance(SettingsButtonClickAction::class.java)
-    private val commandId: String = "roo-cline.settingsButtonClicked"
+    private val commandId: String = "zhanlu.settingsButtonClicked"
 
     /**
      * Performs the action when the Settings button is clicked.
@@ -124,7 +124,7 @@ class SettingsButtonClickAction : AnAction() {
  */
 class MarketplaceButtonClickAction : AnAction() {
     private val logger: Logger = Logger.getInstance(MarketplaceButtonClickAction::class.java)
-    private val commandId: String = "roo-cline.marketplaceButtonClicked"
+    private val commandId: String = "zhanlu.marketplaceButtonClicked"
 
     /**
      * Performs the action when the Marketplace button is clicked.
@@ -133,6 +133,25 @@ class MarketplaceButtonClickAction : AnAction() {
      */
     override fun actionPerformed(e: AnActionEvent) {
         logger.info("Marketplace button clicked")
+        executeCommand(commandId, e.project)
+    }
+}
+
+/**
+ * Action that handles clicks on the Account button in the UI.
+ * Executes the corresponding VSCode command when triggered.
+ */
+class AccountButtonClickAction : AnAction() {
+    private val logger: Logger = Logger.getInstance(AccountButtonClickAction::class.java)
+    private val commandId: String = "zhanlu.accountButtonClicked"
+
+    /**
+     * Performs the action when the Account button is clicked.
+     *
+     * @param e The action event containing context information
+     */
+    override fun actionPerformed(e: AnActionEvent) {
+        logger.info("Account button clicked")
         executeCommand(commandId, e.project)
     }
 }

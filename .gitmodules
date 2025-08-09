@@ -1,6 +1,6 @@
 [submodule "deps/roo-code"]
 	path = deps/roo-code
-	url = https://github.com/RooCodeInc/Roo-Code.git
+	url = http://gitlab.cmss.com/paas-aipt/ai/zhanlu-vs.git
 [submodule "deps/vscode"]
 	path = deps/vscode
 	url = https://github.com/microsoft/vscode.git

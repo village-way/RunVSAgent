@@ -149,6 +149,14 @@ SPDX-License-Identifier: Apache-2.0
             <override-text place="GoToAction" text="Marketplace" />
         </action>
 
+        <action id="RunVSAgent.accountButtonClicked"
+                icon="AllIcons.General.User"
+                class="com.sina.weibo.agent.actions.AccountButtonClickAction"
+                text="Account"
+                description="Account">
+            <override-text place="GoToAction" text="Account" />
+        </action>
+
         <action id="RunVSAgent.settingsButtonClicked"
                 icon="AllIcons.General.Settings"
                 class="com.sina.weibo.agent.actions.SettingsButtonClickAction"
@@ -163,6 +171,7 @@ SPDX-License-Identifier: Apache-2.0
             <reference ref="RunVSAgent.mcpButtonClicked" />
             <reference ref="RunVSAgent.historyButtonClicked" />
             <reference ref="RunVSAgent.marketplaceButtonClicked" />
+            <reference ref="RunVSAgent.accountButtonClicked" />
             <reference ref="RunVSAgent.settingsButtonClicked" />
         </group>
 

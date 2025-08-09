@@ -11,17 +11,17 @@ package com.sina.weibo.agent.actions
  */
 object ActionNames {
     /** Action to explain selected code */
-    const val EXPLAIN = "roo-cline: Explain Code"
+    const val EXPLAIN = "zhanlu: Explain Code"
     /** Action to fix issues in selected code */
-    const val FIX = "roo-cline: Fix Code"
+    const val FIX = "zhanlu: Fix Code"
     /** Action to fix logical issues in selected code */
-    const val FIX_LOGIC = "roo-cline: Fix Logic"
+    const val FIX_LOGIC = "zhanlu: Fix Logic"
     /** Action to improve selected code */
-    const val IMPROVE = "roo-cline: Improve Code"
+    const val IMPROVE = "zhanlu: Improve Code"
     /** Action to add selected code to context */
-    const val ADD_TO_CONTEXT = "roo-cline: Add to Context"
+    const val ADD_TO_CONTEXT = "zhanlu: Add to Context"
     /** Action to create a new task */
-    const val NEW_TASK = "roo-cline: New Task"
+    const val NEW_TASK = "zhanlu: New Task"
 }
 
 /**
@@ -30,15 +30,15 @@ object ActionNames {
  */
 object CommandIds {
     /** Command ID for explaining code */
-    const val EXPLAIN = "roo-cline.explainCode"
+    const val EXPLAIN = "zhanlu.explainCode"
     /** Command ID for fixing code */
-    const val FIX = "roo-cline.fixCode"
+    const val FIX = "zhanlu.fixCode"
     /** Command ID for improving code */
-    const val IMPROVE = "roo-cline.improveCode"
+    const val IMPROVE = "zhanlu.improveCode"
     /** Command ID for adding to context */
-    const val ADD_TO_CONTEXT = "roo-cline.addToContext"
+    const val ADD_TO_CONTEXT = "zhanlu.addToContext"
     /** Command ID for creating a new task */
-    const val NEW_TASK = "roo-cline.newTask"
+    const val NEW_TASK = "zhanlu.newTask"
 }
 
 /** Type alias for prompt type identifiers */
